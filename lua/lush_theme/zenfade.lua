@@ -44,6 +44,8 @@ local theme = lush(function(injected_functions)
     VertSplit                                                   { WinSeparator }, -- VertSplit      xxx links to WinSeparator
     Title                                                       { fg=hsl(38, 76, 84), gui="bold", }, -- Title          xxx cterm=bold gui=bold guifg=#f0e4cf
     sym"@markup.heading"                                        { Title }, -- @markup.heading xxx links to Title
+    fugitiveUnstagedModifier                                    { Title },
+    fugitiveStagedModifier                                      { Title },
     FzfLuaTitle                                                 { Title }, -- FzfLuaTitle    xxx links to Title
     Visual                                                      { bg=hsl(37, 7, 33), }, -- Visual         xxx guibg=#746956
     VisualNOS                                                   { Visual }, -- VisualNOS      xxx links to Visual
