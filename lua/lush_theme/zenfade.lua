@@ -58,6 +58,7 @@ local theme = lush(function(injected_functions)
     NoiceCmdlinePopupBorderSearch                               { WarningMsg }, -- NoiceCmdlinePopupBorderSearch xxx links to WarningMsg
     NoiceCmdlineIconSearch                                      { WarningMsg }, -- NoiceCmdlineIconSearch xxx links to WarningMsg
     gitcommitOverflow                                           { WarningMsg }, -- gitcommitOverflow xxx links to WarningMsg
+    gitcommitSummary                                            { bold=true },
     WildMenu                                                    { fg=hsl(0, 0, 25), bg=hsl(311, 27, 58), }, -- WildMenu       xxx guifg=#404040 guibg=#b279a7
     SneakLabel                                                  { WildMenu }, -- SneakLabel     xxx links to WildMenu
     Folded                                                      { fg=hsl(0, 0, 71), bg=hsl(0, 0, 34), }, -- Folded         xxx guifg=#b6b6b6 guibg=#575757
