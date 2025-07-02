@@ -4,11 +4,11 @@ Colorscheme based on the [zenbones](https://github.com/zenbones-theme/zenbones.n
 
 ## Example
 
-zenburn:
+### [zenburn.nvim](https://github.com/daler/zenburn.nvim)
 
 ![colorscheme](zenburn.png)
 
-zenfade:
+### zenfade
 
 ![colorscheme](zenfade.png)
 
