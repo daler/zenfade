@@ -2,6 +2,28 @@
 
 Colorscheme based on the [zenbones](https://github.com/zenbones-theme/zenbones.nvim) "zenburned" variant, which in turn is based on zenburn.
 
+## Example
+
+![colorscheme](screenshot.png)
+
+## Installation
+
+
+Install like any other plugin, e.g., with [vim-plug](https://github.com/junegunn/vim-plug):
+
+```vim
+Plug "daler/zenfade"
+```
+
+Or [lazy.nvim](https://github.com/folke/lazy.nvim):
+
+```lua
+require("lazy").setup({
+    "daler/zenfade",
+})
+```
+## Modifying
+
 Compared to zenburn it is a little faded and has slightly warmer palette.
 
 Here is how to edit this (or any other) lush-based colorscheme.
