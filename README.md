@@ -4,7 +4,13 @@ Colorscheme based on the [zenbones](https://github.com/zenbones-theme/zenbones.n
 
 ## Example
 
-![colorscheme](screenshot.png)
+zenburn:
+
+![colorscheme](zenburn.png)
+
+zenfade:
+
+![colorscheme](zenfade.png)
 
 ## Installation
 

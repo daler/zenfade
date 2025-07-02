@@ -149,7 +149,7 @@ local theme = lush(function(injected_functions)
     Constant                                                    { fg=hsl(63, 82, 86), }, -- Constant       xxx cterm=italic gui=italic guifg=#baa681
     Link                                                        {fg=hsl(219, 19, 75), underline=true, italic=true},
     Character                                                   { Constant }, -- Character      xxx links to Constant
-    sym"@variable.builtin"                                      { Constant }, -- @variable.builtin xxx links to Constant
+    sym"@variable.builtin"                                      {Normal, bold=true}, -- @variable.builtin xxx links to Constant
     sym"@constant.builtin"                                      { Constant }, -- @constant.builtin xxx links to Constant
     sym"@module"                                                { Constant }, -- @module        xxx links to Constant
     sym"@string.regexp"                                         { Constant }, -- @string.regexp xxx links to Constant
@@ -197,22 +197,22 @@ local theme = lush(function(injected_functions)
     sym"@function.macro"                                        { PreProc }, -- @function.macro xxx links to PreProc
     sym"@markup.environment"                                    { PreProc }, -- @markup.environment xxx links to PreProc
     sym"@keyword.directive"                                     { PreProc }, -- @keyword.directive xxx links to PreProc
-    Type                                                        { fg=hsl(0, 0, 65), }, -- Type           xxx guifg=#a8a8a8
-    StorageClass                                                { Type }, -- StorageClass   xxx links to Type
-    Structure                                                   { Type }, -- Structure      xxx links to Type
-    Typedef                                                     { Type }, -- Typedef        xxx links to Type
-    sym"@type"                                                  { Type }, -- @type          xxx links to Type
-    NvimNumberPrefix                                            { Type }, -- NvimNumberPrefix xxx links to Type
-    NvimOptionSigil                                             { Type }, -- NvimOptionSigil xxx links to Type
-    BlinkCmpLabelDetail                                         { Type }, -- BlinkCmpLabelDetail xxx links to Type
-    BlinkCmpLabelDescription                                    { Type }, -- BlinkCmpLabelDescription xxx links to Type
-    BlinkCmpSource                                              { Type }, -- BlinkCmpSource xxx links to Type
-    sym"@keyword.storage"                                       { Type }, -- @keyword.storage xxx links to Type
-    sym"@variable.parameter.vimdoc"                             { Type }, -- @variable.parameter.vimdoc xxx links to Type
-    helpSpecial                                                 { Type }, -- helpSpecial    xxx links to Type
-    markdownCode                                                { Type }, -- markdownCode   xxx links to Type
-    sym"@markup.raw.markdown"                                   { Type }, -- @markup.raw.markdown xxx links to Type
-    Special                                                     { fg=hsl(60, 48, 75), }, -- Special        xxx guifg=#f0f08f
+    Type                                                        { fg=hsl(50, 62, 86) }, -- Type           xxx guifg=#a8a8a8
+    StorageClass                                                { fg=hsl(0, 0, 65), }, -- StorageClass   xxx links to Type
+    Structure                                                   { StorageClass }, -- Structure      xxx links to Type
+    Typedef                                                     { StorageClass }, -- Typedef        xxx links to Type
+    sym"@type"                                                  {Type}, -- @type          xxx links to Type
+    NvimNumberPrefix                                            { StorageClass }, -- NvimNumberPrefix xxx links to Type
+    NvimOptionSigil                                             { StorageClass }, -- NvimOptionSigil xxx links to Type
+    BlinkCmpLabelDetail                                         { StorageClass }, -- BlinkCmpLabelDetail xxx links to Type
+    BlinkCmpLabelDescription                                    { StorageClass }, -- BlinkCmpLabelDescription xxx links to Type
+    BlinkCmpSource                                              { StorageClass }, -- BlinkCmpSource xxx links to Type
+    sym"@keyword.storage"                                       { StorageClass }, -- @keyword.storage xxx links to Type
+    sym"@variable.parameter.vimdoc"                             { StorageClass }, -- @variable.parameter.vimdoc xxx links to Type
+    helpSpecial                                                 { StorageClass }, -- helpSpecial    xxx links to Type
+    markdownCode                                                { StorageClass }, -- markdownCode   xxx links to Type
+    sym"@markup.raw.markdown"                                   {fg=hsl(0, 0, 65), }, -- @markup.raw.markdown xxx links to Type
+    Special                                                     { fg=hsl(60, 55, 81) }, -- Special        xxx guifg=#f0f08f
     Tag                                                         { Special }, -- Tag            xxx links to Special
     SpecialChar                                                 { Special }, -- SpecialChar    xxx links to Special
     Debug                                                       { Special }, -- Debug          xxx links to Special
