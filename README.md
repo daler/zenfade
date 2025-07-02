@@ -15,10 +15,13 @@ Colorscheme based on the [zenbones](https://github.com/zenbones-theme/zenbones.n
 ## Installation
 
 
-Install like any other plugin, e.g., with [vim-plug](https://github.com/junegunn/vim-plug):
+Install like any other plugin, e.g., with
+[vim-plug](https://github.com/junegunn/vim-plug). Also needs the
+[lush](https://github.com/rktjmp/lush.nvim) plugin.
 
 ```vim
 Plug "daler/zenfade"
+Plug "rktjmp/lush.nvim"
 ```
 
 Or [lazy.nvim](https://github.com/folke/lazy.nvim):
@@ -26,6 +29,10 @@ Or [lazy.nvim](https://github.com/folke/lazy.nvim):
 ```lua
 require("lazy").setup({
     "daler/zenfade",
+    dependencies = {"rktjmp/lush.nvim",},
+    lazy = false,
+    priority = 1000
+
 })
 ```
 ## Modifying
